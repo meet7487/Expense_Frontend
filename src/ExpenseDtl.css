@@ -1,0 +1,48 @@
+.expense-page { min-height: 100vh; padding-bottom: 48px; background: radial-gradient(circle at 86% 6%,rgba(109,133,239,.19),transparent 22rem),radial-gradient(circle at 8% 36%,rgba(70,211,183,.11),transparent 20rem),linear-gradient(135deg,#f6f8fd 0%,#edf3ff 52%,#f8fbff 100%); }
+.expense-navbar { position: relative !important; overflow: hidden; color: #fff !important; background: linear-gradient(105deg,#132856,#3157b6 58%,#597de0) !important; box-shadow: 0 8px 26px rgba(28,54,121,.25) !important; }
+.expense-navbar::after { position: absolute; top: -80px; right: 12%; width: 240px; height: 240px; border: 1px solid rgba(255,255,255,.15); border-radius: 50%; content: ""; }
+.expense-toolbar { min-height: 72px !important; }
+.expense-brand-wrap { position: relative; z-index: 1; display: flex; flex: 1; align-items: center; gap: 11px; }
+.brand-icon { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid rgba(255,255,255,.25); border-radius: 11px; background: rgba(255,255,255,.16); }
+.brand-icon .MuiSvgIcon-root { font-size: 20px; }
+.expense-brand { font-family: Manrope,sans-serif !important; font-weight: 800 !important; letter-spacing: -.04em !important; }
+.expense-user { margin-right: 18px !important; padding: 6px 12px; border: 1px solid rgba(255,255,255,.22); border-radius: 20px; background: rgba(255,255,255,.12); font-size: .85rem !important; }
+.logout-button { border-radius: 9px !important; background: #fff !important; color: #253a78 !important; box-shadow: none !important; font-weight: 700 !important; text-transform: none !important; }
+.logout-button:hover { background: #eef3ff !important; }
+.expense-content { max-width: 1180px !important; margin-top: 38px !important; }
+.expense-layout { display: grid; grid-template-columns: minmax(280px,.82fr) minmax(0,1.45fr); gap: 26px; align-items: start; }
+.expense-card,.expense-table-card { border: 1px solid rgba(220,228,242,.95); border-radius: 22px !important; background: rgba(255,255,255,.91) !important; box-shadow: 0 14px 36px rgba(37,57,106,.09) !important; backdrop-filter: blur(12px); }
+.expense-card { padding: 26px !important; }
+.expense-card-heading { display: flex; align-items: center; gap: 10px; }
+.section-icon { display: grid; width: 32px; height: 32px; place-items: center; border-radius: 10px; background: #eff2ff; color: #5d67cc; }
+.section-icon--blue { background: #e8f5ff; color: #3270c8; }
+.section-icon .MuiSvgIcon-root { font-size: 18px; }
+.expense-section-title { color: #172650 !important; font-family: Manrope,sans-serif !important; font-size: 1.2rem !important; font-weight: 800 !important; letter-spacing: -.03em !important; }
+.expense-helper { margin-bottom: 14px !important; color: #7b879e; font-size: .88rem !important; }
+.expense-card .MuiTextField-root { margin: 7px 0 !important; }
+.expense-card .MuiOutlinedInput-root { border-radius: 12px; background: #fbfcff; transition: transform .2s ease, box-shadow .2s ease; }
+.expense-card .MuiOutlinedInput-notchedOutline { border-color: #dce4f0; }
+.expense-card .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: #4967cb; }
+.expense-card .MuiOutlinedInput-root.Mui-focused { transform: translateY(-1px); box-shadow: 0 7px 15px rgba(70,99,187,.10); }
+.expense-card .MuiInputLabel-root { color: #63718c; font-weight: 600; }
+.form-actions { display: flex; gap: 10px; margin-top: 18px; }
+.expense-card .MuiButton-contained { min-height: 42px; border-radius: 11px; background: linear-gradient(110deg,#2f51b4,#5d68ce); box-shadow: 0 7px 14px rgba(54,89,189,.22); font-weight: 700; text-transform: none; }
+.expense-card .MuiButton-contained:hover { background: #29499f; }
+.expense-card .MuiButton-outlined { border-radius: 10px; border-color: #cbd5e5; color: #52627d; font-weight: 700; text-transform: none; }
+.expense-table-card { overflow: hidden; }
+.expense-table-heading { display: flex; align-items: center; justify-content: space-between; padding: 23px 25px 13px; }
+.expense-count { padding: 5px 10px; border-radius: 14px; background: #eef2ff; color: #4961b3; font-size: .78rem; font-weight: 700; }
+.expense-table-card .MuiTable-root { min-width: 660px; }
+.expense-table-card .MuiTableHead-root { background: #f6f8fc; }
+.expense-table-card .MuiTableCell-head { padding: 13px 18px; color: #71809a; border-bottom: 1px solid #e8edf5; font-size: .71rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; white-space: nowrap; }
+.expense-table-card .MuiTableCell-body { padding: 16px 18px; color: #263653; border-color: #edf0f6; font-size: .9rem; font-weight: 500; }
+.expense-table-card .MuiTableRow-root { transition: background .18s ease; }
+.expense-table-card .MuiTableRow-root:hover { background: #f4f7ff; }
+.expense-table-card .MuiTableCell-body:nth-child(2) { color: #29499f; font-weight: 700; }
+.table-actions { display: flex; gap: 8px; }
+.table-actions .MuiButton-root { border-radius: 8px; box-shadow: none; font-size: .73rem; font-weight: 700; text-transform: none; }
+.table-actions .MuiButton-containedPrimary { background: #e8efff; color: #3459b9; }
+.table-actions .MuiButton-containedError { background: #fff0f1; color: #d64d61; }
+.empty-expenses { padding: 48px 20px !important; color: #7b879e !important; text-align: center; }
+@media (max-width: 860px) { .expense-layout { grid-template-columns: 1fr; } .expense-content { margin-top: 24px !important; } }
+@media (max-width: 560px) { .expense-toolbar { min-height: 64px !important; padding: 0 16px !important; } .brand-icon { width: 32px; height: 32px; } .expense-brand { font-size: 1.05rem !important; } .expense-user { display: none; } .logout-button { position: relative; z-index: 1; min-width: auto !important; padding: 6px 10px !important; font-size: .78rem !important; } .expense-content { padding: 0 14px !important; } .expense-card { padding: 21px !important; } .expense-table-heading { padding: 20px 18px 10px; } .form-actions .MuiButton-root { flex: 1; } }

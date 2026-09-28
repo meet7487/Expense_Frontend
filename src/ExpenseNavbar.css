@@ -1,0 +1,8 @@
+.standalone-navbar { color: #fff !important; background: linear-gradient(105deg,#132856,#3157b6 58%,#597de0) !important; box-shadow: 0 8px 26px rgba(28,54,121,.25) !important; }
+.standalone-navbar__toolbar { min-height: 72px !important; }
+.standalone-navbar__brand,.standalone-navbar__actions { display: flex; align-items: center; gap: 12px; }
+.standalone-navbar__brand > span { display: grid; width: 36px; height: 36px; place-items: center; border: 1px solid rgba(255,255,255,.25); border-radius: 11px; background: rgba(255,255,255,.16); }
+.standalone-navbar__brand .MuiTypography-root { font-family: Manrope,sans-serif; font-weight: 800; letter-spacing: -.04em; }
+.standalone-navbar__user { padding: 6px 12px; border: 1px solid rgba(255,255,255,.22); border-radius: 20px; background: rgba(255,255,255,.12); font-size: .85rem !important; }
+.standalone-navbar__logout { border-radius: 9px !important; background: #fff !important; color: #253a78 !important; box-shadow: none !important; font-weight: 700 !important; text-transform: none !important; }
+@media (max-width: 560px) { .standalone-navbar__toolbar { min-height: 64px !important; padding: 0 16px !important; } .standalone-navbar__user { display: none; } .standalone-navbar__brand > span { width: 32px; height: 32px; } .standalone-navbar__brand .MuiTypography-root { font-size: 1.05rem; } }

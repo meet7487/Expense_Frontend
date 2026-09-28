@@ -1,0 +1,21 @@
+.auth-container { position: relative; display: grid; min-height: 100vh; place-items: center; overflow: hidden; padding: 28px 20px; background: #f5f7ff; }
+.auth-container::before, .auth-container::after { position: absolute; width: 38rem; height: 38rem; border-radius: 50%; content: ""; filter: blur(4px); }
+.auth-container::before { top: -20rem; left: -13rem; background: #c9d8ff; }
+.auth-container::after { right: -16rem; bottom: -22rem; background: #bcefe5; }
+.auth-container .MuiContainer-root { position: relative; z-index: 1; }
+.auth-box { width: 100%; max-width: 440px; margin: auto; padding: 42px !important; border: 1px solid rgba(255,255,255,.85); border-radius: 28px !important; background: rgba(255,255,255,.86); box-shadow: 0 24px 60px rgba(50,71,125,.16) !important; backdrop-filter: blur(18px); }
+.auth-title { display: flex; flex-direction: column; gap: 8px; margin-bottom: 26px !important; color: #16233f !important; font-family: Manrope, sans-serif !important; font-size: 1.9rem !important; font-weight: 800 !important; letter-spacing: -.05em !important; }
+.auth-title::before { width: max-content; padding: 5px 9px; border-radius: 7px; background: #e9edff; color: #5869c9; content: "PERSONAL FINANCE"; font-family: "DM Sans",sans-serif; font-size: .64rem; font-weight: 800; letter-spacing: .11em; }
+.auth-box .MuiTextField-root { margin: 8px 0 !important; }
+.auth-box .MuiOutlinedInput-root { border-radius: 13px; background: #fff; transition: transform .2s ease,box-shadow .2s ease; }
+.auth-box .MuiInputLabel-root { font-weight: 600; color: #667085; }
+.auth-box .MuiOutlinedInput-notchedOutline { border-color: #dce3f0; }
+.auth-box .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline { border-color: #95aaf0; }
+.auth-box .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline { border-color: #536dce; border-width: 2px; }
+.auth-box .MuiOutlinedInput-root.Mui-focused { transform: translateY(-1px); box-shadow: 0 7px 15px rgba(70,99,187,.10); }
+.auth-button { margin-top: 22px !important; min-height: 50px; border-radius: 13px !important; background: linear-gradient(110deg,#3454bc,#6c58cf) !important; box-shadow: 0 10px 20px rgba(65,75,180,.26) !important; font-weight: 700 !important; text-transform: none !important; }
+.auth-button:hover { transform: translateY(-1px); box-shadow: 0 13px 24px rgba(65,75,180,.33) !important; }
+.auth-link { color: #53627b !important; font-weight: 600 !important; text-transform: none !important; }
+.auth-link p { margin: 0; color: inherit !important; }
+.auth-box .MuiDivider-root { margin: 24px 0 12px !important; border-color: #e7ebf3; }
+@media (max-width: 480px) { .auth-container { padding: 18px 14px; } .auth-box { padding: 30px 22px !important; border-radius: 22px !important; } .auth-title { font-size: 1.6rem !important; } }
